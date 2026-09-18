@@ -1,63 +1,68 @@
 body,
 html {
-  height: 100%;
-  margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
 .container {
-  height: 100%;
-  box-sizing: border-box;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .container div {
-  font-size: 28px;
-  font-family: Helvetica;
-  font-weight: 600;
-  color: white;
+    font-size: 28px;
+    font-family: Helvetica;
+    font-weight: 600;
+    color: white;
 }
 
 .header {
-  background-color: #006157;
+    background-color: #006157;
 }
 
 .sidebar {
-  background-color: #0eb0e6;
+    background-color: #0eb0e6;
 }
 
 .nav {
-  background-color: #fff;
+    background-color: #fff;
+    margin-bottom: 3%;
+    padding: 0 5%;
+    grid-area: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .article {
-  background-color: #7E1DC3;
+    background-color: #7E1DC3;
 }
 
 .footer {
-  background-color: #393f4d;
+    background-color: #393f4d;
 }
 
 .article p {
-  font-size: 18px;
-  font-family: sans-serif;
-  color: white;
-  text-align: left;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
 }
+
+
+/* =========================
+   MAIN GRID
+   ========================= */
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 1fr 5fr 1fr;
-}
-
-.nav {
-  grid-area: 1 / 2;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
 }
 
 .header {
-  grid-column: 2 / 2;
+    grid-column: 2 / 3;
 }
+
 .sidebar {
     grid-row: 1 / 5;
     display: flex;
@@ -66,6 +71,15 @@ html {
     padding-left: 10%;
     padding-top: 10%;
 }
+
+.footer {
+    grid-column: 2 / 3;
+}
+
+
+/* =========================
+   SIDEBAR
+   ========================= */
 
 .midSidebar,
 .lowSidebar {
@@ -87,31 +101,86 @@ html {
     margin-left: 20px;
 }
 
-.footer {
-  grid-column: 2 / 3;
+.sidebar img {
+    width: 30px;
+    height: 30px;
 }
 
-.sidebar img {
-  width: 30px;
-  height: 30px;
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.upperNav img {
+    width: 30px;
+    height: 30px;
 }
+
+.upperNav p {
+    color: #252525;
+    font-size: 0.5em;
+}
+
+#smallProfilePic {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* TOP NAVIGATION */
+
+.upperNav {
+    grid-area: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.upperNav input[type="text"] {
+    flex: 1;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 17px;
+    background-color: #dcdce7;
+    border-radius: 30px;
+}
+
+.corner {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+
+/* BOTTOM NAVIGATION */
 
 .lowerNav {
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: 2 / 1;
 }
+
+
+/* PROFILE */
 
 .profile {
     display: flex;
     align-items: center;
-    padding-left: 5%;
     gap: 15px;
 }
 
 .profile > div > p {
-  color: #222222;
-
+    color: #222222;
 }
 
 .greeting,
@@ -120,34 +189,45 @@ html {
 }
 
 .greeting {
-  font-size: 0.5em;
+    font-size: 0.5em;
 }
 
+
+/* BUTTONS */
+
 .buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 50px;
-  padding-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
 }
 
 .navButton {
-	background-color:#00a1d6;
-	border-radius:28px;
-	border:1px solid #00a1d6;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 50px;
-  font-weight: bold;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #5b6178;
+    background-color: #00a1d6;
+    border-radius: 28px;
+    border: 1px solid #00a1d6;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 50px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5b6178;
 }
 
+
+/* =========================
+   PROFILE IMAGE
+   ========================= */
+
 .circle-crop {
-  width: 100px;          /* Set your desired size */
-  aspect-ratio: 1 / 1;   /* Forces the image to be a perfect square */
-  border-radius: 50%;    /* Turns the square into a circle */
-  object-fit: cover;     /* Crops the image center without stretching it */
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
+/* =========================
+    Content
+  ========================= */
