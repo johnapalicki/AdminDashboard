@@ -1,96 +1,97 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Dashboard</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="sidebar">
-                <div class ="topSidebar">
-                    <img src="/svgs/dashboard-white.svg" id="dashImg">
-                    <p>Dashboard</p>
-                </div>
-                <div class="midSidebar">
-                    <div>
-                        <img src="/svgs/home.svg">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="topSidebar">
+                <img src="/svgs/dashboard-white.svg" id="dashImg">
+                <p id="dash">Dashboard</p>
+            </div>
+            <div class="midSidebar">
+                <div>
+                    <img src="/svgs/home.svg">
                     <a>Home</a>
-                    </div>
-                    <div>
-                        <img src="/svgs/profile.svg">
-                        <a>Profile</a>
-                    </div>
-                    <div>        
-                        <img src="/svgs/chat.svg">
-                <a>Messages</a>
-            </div>
-            <div>
-                <img src="/svgs/clock.svg">
-                <a>History</a>
-            </div>
-            <div>
-                <img src="/svgs/tasks.svg">
-                <a>Tasks</a>
-            </div>
-            <div>        
-                <img src="/svgs/group.svg">
-                <a>Communities</a>
-            </div>
                 </div>
-                <div class="lowSidebar">
-            <div>
-                <img src="/svgs/gear.svg">
-                <a>Settings</a>
+                <div>
+                    <img src="/svgs/profile.svg">
+                    <a>Profile</a>
+                </div>
+                <div>
+                    <img src="/svgs/chat.svg">
+                    <a>Messages</a>
+                </div>
+                <div>
+                    <img src="/svgs/clock.svg">
+                    <a>History</a>
+                </div>
+                <div>
+                    <img src="/svgs/tasks.svg">
+                    <a>Tasks</a>
+                </div>
+                <div>
+                    <img src="/svgs/group.svg">
+                    <a>Communities</a>
+                </div>
             </div>
-            <div>
-                <img src="/svgs/question.svg">
-                <a>Support</a>
-            </div>
+            <div class="lowSidebar">
+                <div>
+                    <img src="/svgs/gear.svg">
+                    <a>Settings</a>
+                </div>
+                <div>
+                    <img src="/svgs/question.svg">
+                    <a>Support</a>
+                </div>
                 <div>
                     <img src="/svgs/lock.svg">
                     <a>Privacy</a>
                 </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="upperNav">
+                <div class="search">
+                    <img src="/svgs/search.svg">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class="corner">
+                    <img src="/svgs/bell.svg" id="specialIcon">
+                    <img src="svgs/profile_picture.jpg" alt="Profile Picture" class="circle-crop" id="smallProfilePic">
+                    <p>Johnny Palicki</p>
                 </div>
             </div>
-            <div class="nav">
-                <div class="upperNav">
-                    <div class="search">
-                        <img src="/svgs/search.svg">
-                        <input type="text" placeholder="Search..">
-                    </div> 
-                    <div class="corner">
-                        <img src="/svgs/bell.svg" id="specialIcon">
-                        <img src="svgs/profile_picture.jpg"
-                            alt="Profile Picture"
-                            class="circle-crop" id="smallProfilePic">
-                        <p>Johnny Palicki</p>
+            <div class="lowerNav">
+                <div class="profile">
+                    <img src="svgs/profile_picture.jpg" alt="Profile Picture" class="circle-crop">
+                    <div>
+                        <p class="greeting">Hi there,</p>
+                        <p class="user">Johnny Palicki (@Jogna)</p>
                     </div>
                 </div>
-                <div class="lowerNav">
-                    <div class="profile">
-                        <img src="svgs/profile_picture.jpg"
-                            alt="Profile Picture"
-                            class="circle-crop">
-                        <div>
-                            <p class="greeting">Hi there,</p>
-                            <p class="user">Johnny Palicki (@Jogna)</p>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <button class="navButton">New</button>
-                        <button class="navButton">Upload</button>
-                        <button class="navButton">Share</button>
-                    </div>
+                <div class="buttons">
+                    <button class="navButton">New</button>
+                    <button class="navButton">Upload</button>
+                    <button class="navButton">Share</button>
                 </div>
             </div>
-            <div class="content">
+        </div>
+        <div class="content">
+            <div class="projectsSection">
+                <h2>Your Projects</h2>
                 <div class="projects">
                     <div class="projContainer" id="spy">
                         <p class="projHeading">Spy vs Spy</p>
-                        <p class="projContent">Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="projContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="icons">
                             <img src="svgs/star.svg">
                             <img src="svgs/eye.svg">
@@ -99,7 +100,11 @@
                     </div>
                     <div class="projContainer" id="brawl">
                         <p class="projHeading">Brawl Stars</p>
-                        <p class="projContent"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="projContent"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip ex ea commodo consequat. Fusce rutrum, metus id porta porttitor, leo ipsum congue
+                            velit,
+                            eu hendrerit lectus nisi a odio.</p>
                         <div class="icons">
                             <img src="svgs/star.svg">
                             <img src="svgs/eye.svg">
@@ -108,7 +113,10 @@
                     </div>
                     <div class="projContainer" id="smash">
                         <p class="projHeading">Super Smash Bros.</p>
-                        <p class="projContent">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="projContent">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia deserunt mollit anim id est laborum.</p>
                         <div class="icons">
                             <img src="svgs/star.svg">
                             <img src="svgs/eye.svg">
@@ -117,7 +125,11 @@
                     </div>
                     <div class="projContainer" id="stardew">
                         <p class="projHeading">Stardew Valley</p>
-                        <p class="projContent">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p class="projContent">Pellentesque habitant morbi tristique senectus et netus et malesuada
+                            fames ac
+                            turpis egestas. Vivamus at blandit leo. In ac fringilla nisi. Sed pharetra ut turpis id
+                            luctus.
+                        </p>
                         <div class="icons">
                             <img src="svgs/star.svg">
                             <img src="svgs/eye.svg">
@@ -126,39 +138,83 @@
                     </div>
                     <div class="projContainer" id="minecraft">
                         <p class="projHeading">Minecraft</p>
-                        <p class="projContent">Curabitur bibendum turpis quis interdum semper. Sed at pharetra neque, nec lacinia diam. Suspendisse quis faucibus mi, aliquam porttitor ipsum.</p>
+                        <p class="projContent">Curabitur bibendum turpis quis interdum semper. Sed at pharetra neque,
+                            nec
+                            lacinia diam. Suspendisse quis faucibus mi, aliquam porttitor ipsum.</p>
                         <div class="icons">
                             <img src="svgs/star.svg">
                             <img src="svgs/eye.svg">
                             <img src="svgs/share.svg">
                         </div>
-                    </div>  
+                    </div>
                     <div class="projContainer" id="mariokart">
                         <p class="projHeading">Mario Kart</p>
-                        <p class="projContent">Ivamus condimentum eros id mattis pharetra. Duis varius eros nibh. Donec a venenatis eros. Fusce in mauris massa. Donec est metus, rhoncus eu leo sed, aliquet posuere nisl.</p>
+                        <p class="projContent">Ivamus condimentum eros id mattis pharetra. Duis varius eros nibh. Donec
+                            a
+                            venenatis eros. Fusce in mauris massa. Donec est metus, rhoncus eu leo sed, aliquet posuere
+                            nisl.</p>
                         <div class="icons">
                             <img src="svgs/star.svg">
                             <img src="svgs/eye.svg">
                             <img src="svgs/share.svg">
                         </div>
-                    </div>               
+                    </div>
                 </div>
+            </div>
+            <div class="announcementsSection">
+                <h2>Announcements</h2>
                 <div class="announcements">
-
+                    <div class="announceContainer">
+                        <p class="announceHeading">Site Maintenance</p>
+                        <p class="announceContent">Cras ut ex in nibh accumsan ullamcorper. Pellentesque tristique eros
+                            id
+                            nibh finibus euismod.</p>
+                    </div>
+                    <div class="announceContainer">
+                        <p class="announceHeading">Community Share Day</p>
+                        <p class="announceContent">Cras suscipit volutpat elit eget pulvinar. Proin posuere tortor ac
+                            tempus
+                            luctus. Donec vitae est et neque faucibus posuere. </p>
+                    </div>
+                    <div class="announceContainer">
+                        <p class="announceHeading">Updated Privacy Policy</p>
+                        <p class="announceContent">Aenean sodales ex non massa efficitur, et egestas neque dapibus. In
+                            consequat hendrerit ex, nec finibus magna faucibus eu. Aliquam a libero non erat
+                            sollicitudin
+                            condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos
+                            himenaeos.</p>
+                    </div>
                 </div>
-                <div class="trending"></div>
+            </div>
+            <div class="trendingSection">
+                <h2>Trending</h2>
+                <div class="trending">
+                    <div class="profileContainer">
+                        <img src="svgs/cinnamoroll.png" class="mini-circle-crop">
+                        <div class="userTrending">
+                            <p class="handle">@wryonna</p>
+                            <p class="title">MSW Canididate</p>
+                        </div>
+                    </div>
+                    <div class="profileContainer">
+                        <img src="svgs/noemi.jpg" class="mini-circle-crop">
+                        <div class="userTrending">
+                            <p class="handle">@gnomes</p>
+                            <p class="title">Lowes Lesbian</p>
+                        </div>
+                    </div>
+                    <div class="profileContainer">
+                        <img src="svgs/lukey.jpg" class="mini-circle-crop">
+                        <div class="userTrending">
+                            <p class="handle">@lukeypedia</p>
+                            <p class="title">Spiderman in Training</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </body>
-    </html>
+    </div>
+</body>
 
-    <!-- 
-                <h1>Your Projects</h1>
-                <h1>Announcements</h1>
-
-    <div class="footer">Footer</div>
-    <p> </p>
-    <p>]  </p>
-    <p>Cras ut ex in nibh accumsan ullamcorper. Fusce rutrum, metus id porta porttitor, leo ipsum congue velit, eu hendrerit lectus nisi a odio. Pellentesque tristique eros id nibh finibus euismod. Cras suscipit volutpat elit eget pulvinar. Vivamus at blandit leo. Aenean sodales ex non massa efficitur, et egestas neque dapibus. In consequat hendrerit ex, nec finibus magna faucibus eu. Aliquam a libero non erat sollicitudin condimentum. In ac fringilla nisi. Sed pharetra ut turpis id luctus. Proin posuere tortor ac tempus luctus. Donec vitae est et neque faucibus posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-        </div>
-    -->
+</html>
